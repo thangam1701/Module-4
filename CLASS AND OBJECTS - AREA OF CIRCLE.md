@@ -1,43 +1,36 @@
-# Exp.No:19  
-## CLASS AND OBJECTS - AREA OF CIRCLE
+
+# Exp.No:3e
+## SEB - STRING SLICING
 
 ---
 
 ### AIM  
-To write a Python program to take the radius from the user and find the area of a circle using the class name `umbrella` and function name `rain`.
+To write a Python function that accepts a string and forms a new string by reversing the characters from the **4th position to the 10th position** with **alternate characters**, and then prints the new string.
 
 ---
 
 ### ALGORITHM
 
 1. Begin the program.  
-2. Create a class named `umbrella`.  
-3. Define a method `rain(self, r)` inside the class `umbrella` that accepts a radius `r` as an argument.  
-4. Inside the `rain` method:  
-   - Calculate the area of a circle using the formula:  
-     \[ \text{Area} = \pi \times r^2 \]  
-   - Use the `math.pi` constant to get the value of π and perform the calculation.  
-   - Print the result, formatted to two decimal places.  
-5. Prompt the user for an integer input to represent the radius of the circle.  
-6. Create an instance of the `umbrella` class and store it in the variable `u`.  
-7. Call the `rain` method of the `umbrella` class, passing the user-provided radius `r` as an argument.  
-8. Terminate the program.
+2. Accept a string as input.  
+3. Take a slice of the input string from index **2** to **10** (Python uses 0-based indexing, so index 2 refers to the 3rd character, i.e., the 4th character in natural terms).  
+4. Reverse the sliced substring.  
+5. Extract every second character from the reversed substring using slicing (`[::2]`).  
+6. Print the final processed string.  
+7. Terminate the program.
 
 ---
 
 ### PROGRAM
 
 ```
-
-
-
+def slice(a):
+    b=a[9:1:-2]
+    print(f"The reversed string is '{b}'")
 ```
 
 ### OUTPUT
-
-
+![image](https://github.com/user-attachments/assets/0ebdfd7e-7ce0-4307-9a37-7fe68221787f)
 
 ### RESULT
-
-
-
+Thus a Python function that accepts a string and forms a new string by reversing the characters from the 4th position to the 10th position with alternate characters, and then prints the new string has been implemented and executed.
